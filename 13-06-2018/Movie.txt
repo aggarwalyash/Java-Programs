@@ -1,0 +1,26 @@
+class Movie{
+	String title;
+	double budget;
+	boolean universal;
+	public void setTitle(String title){
+		this.title = title;
+	}
+	public void setBudget(double budget){
+		this.budget = budget;
+	} 
+	public String getTitle(){
+		return title;
+	}
+	public double getBudget(){
+		return budget;
+	}
+	public void setUniversal(boolean universal){
+		this.universal = universal;
+	}
+	public boolean isUniversal(){
+		return universal;
+	}
+ 
+}
+
+//String and wrapper classes are all final classes.

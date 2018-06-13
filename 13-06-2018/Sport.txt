@@ -1,0 +1,31 @@
+class Sport{
+	private String name;
+	private int player;
+	private boolean outdoor;
+
+	Sport(){}
+	Sport(String name,int player,boolean outdoor){
+		this.name = name;
+		this.player = player;
+		this.outdoor = outdoor;
+	}
+
+	public void setName(String name){
+		this.name = name;
+	}
+	public void setPlayer(int player){
+		this.player = player;
+	}
+	public void setOutdoor(boolean outdoor){
+		this.outdoor = outdoor;
+	}
+	public String getName(){
+		return name;
+	}
+	public int getPlayer(){
+		return player;
+	}
+	public boolean isOutdoor(){
+		return outdoor;
+	}
+}
