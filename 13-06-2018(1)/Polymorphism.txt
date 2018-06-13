@@ -1,0 +1,35 @@
+/***
+
+/*Polymorphic parameter(argument)  */
+
+void calBonus(Employee emp){                 // Here we can pass parameter of type Employee and its child class i.e. Manager and Engineer.
+
+}
+
+void calBonus(Manager emp){                 // Here we can pass parameter of type Manager only.
+
+}
+
+***/
+----------------------------------------------------------------------------------------------
+
+class Employee{
+}
+
+class Engineer extends Employee{
+}
+
+class Test{
+	public static void main(String args[]){
+		Employee emp1 = new Employee();
+		System.out.println(emp1 instanceof Employee);
+		Engineer emp2 = new Engineer();
+		System.out.println(emp2 instanceof Employee);
+		Employee emp3 = new Engineer();
+		System.out.println(emp3 instanceof Employee);
+		Employee emp4 = new Employee();
+		System.out.println(emp4 instanceof Engineer);
+		Employee emp5 = new Engineer();
+		System.out.println(emp5 instanceof Engineer);
+	}
+}

@@ -1,0 +1,40 @@
+objectName instanceof classname
+true/false
+
+class Sample{....}
+
+//left hand side type is compile time type
+Sample s1 = new Sample();
+....
+
+s1 instanceof Sample   --> true               // check the runtime type (right hand side)
+
+--------------------------------------------------------------------------
+
+class Employee{}
+
+clas Engineer extends Employee{}
+
+class Manager extends Employee{}
+
+/*    */
+Employee emp = new Engineer();
+Employee emp = new Manager();
+Employee emp = new Employee();
+
+emp instanceof Employee        // true in all above cases
+/*     */
+
+
+/***
+object of child class is object of parent class also. But converse of this is not true.
+***/
+-------------------------------------------------------------------------
+
+/***
+Manager mgr = new Employee()       // Not possible
+Manager mgr = new Engineer()       // Not possible
+***/
+
+-------------------------------------------------------------------------
+

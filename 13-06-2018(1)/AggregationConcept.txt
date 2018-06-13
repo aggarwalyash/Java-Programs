@@ -1,0 +1,45 @@
+class Date{
+	private int date;
+	private int month;
+	private int year;
+	Date(){
+		date = 01;
+		month = 01;
+		year = 1999;
+	}
+	Date(int date,int month,int year){
+		this.date=date;
+		this.month=month;
+		this.year=year;
+	}
+	public void displayDate(){
+		return ("DATE:- " + date + " / "+month + " / " + year);	
+	} 
+}
+
+class Employee{
+	int emp_id;
+	String emp_name;
+	Date dobj;
+	Employee(){}
+	Employee(int id,String name;dateObj){
+		emp_id = id;
+		emp_name = name;
+		dobj = dateObj;
+	}
+
+	public void showDetails(){
+		 System.out.println(emp_id + "   " +emp_name + "   " + dobj.displayDate() );
+	}
+
+	public static void main(String args[]){
+		Employee emp1 = new Employee();
+		Date dobj = new Date(12,09,1997);
+		emp.id = 1;
+		emp.name = "XYZ";
+		emp.dobj = dobj;
+		Employee emp2 = new Employee(2,"ABC",new Date(06,09,1996));
+		emp1.showDetails();
+		emp2.showDetails();		
+	}
+}

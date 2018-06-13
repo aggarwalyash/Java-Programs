@@ -1,0 +1,83 @@
+/***
+
+1.)private members are not inherited.
+2.)parent class members can access only its objects but child class can access members of both the classes.
+3.)when an object of child class is created then the default constructor of parent is referenced by default.
+Every constructor class implicitly the default constructor of the parent class using super(method).
+***/
+
+-----------------------------------------------------------------
+
+/*** 1nd point  ***/
+
+
+class A{
+	private int x;
+}
+
+class B extends A{
+	void incrementX(){
+		x++;      // error because x is private member of the parent class.
+	}
+}
+
+-----------------------------------------------------------------
+
+/*** 2nd point  ***/
+
+class A{
+	public int x;
+}
+
+class B extends A{
+	public int y;	
+}
+
+A obj = new A();
+obj.x;   
+obj.y;    // error
+
+
+B obj = new B();
+obj.x;   
+obj.y;   
+
+-----------------------------------------------------------------
+
+/*** 3rd point ***/
+
+class A{
+	int x;
+	A(){
+		x = 100;
+	}
+}
+
+class B extends A{
+	B(){
+		x++;
+	}
+}
+
+B obj =new B();
+S.O.P(obj.x);
+
+----------------------------------------------------------------
+
+/*** Given declarations are same ***/
+
+class A{}
+
+(i.)class B extends A{}
+
+(ii.)class B extends A{
+	B(){}
+	}
+
+(iii.)class B extends A{
+	B(){
+		super();	
+	}
+}
+
+ 

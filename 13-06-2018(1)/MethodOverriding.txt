@@ -1,0 +1,60 @@
+/***
+The process of redefining parent class method in the child class keeping the signatures same(parameters).
+
+Method overriding is an example of runtime polymorphism(dynamic binding).
+
+Important points:-
+1.)overriding method should not be less accessible.(access modifier must be greater than or equal to.)
+2.)overriding method can retrun covarient type.
+3.)overriding method can thro only those exceptions (or their subclasses) which have been already thrown by Overridden method.
+
+Access modifiers:-
+i)public
+ii.)protected
+iii.)default
+iv)private
+
+***/
+
+-----------------------------------------------------------------
+
+class A{
+	void method(){}         // Overriden method.
+}
+
+class B extends A{
+	void method(){		// Overriding method.
+			
+	}            
+}
+
+--------------------------------------------------------------------
+
+/*** Example for point 1 ***/
+
+class Employee{
+	void work(){
+		S.O.P("Employee attends work");
+	}
+	int getSalary(){}
+}
+
+class Manager extends Employee{
+	void work(){                        // here access modifier can be public,protected,default (according to Ist important points).
+		S.O.P("Manager manages resources.");
+	}
+	int getBonus(){}
+}
+
+Employee emp = new Employee();
+emp.work();                      // Employee's work
+emp.getSalary();
+
+
+Manager mgr = new Manager();
+mgr.work();                      // Manager's work
+mgr.getSalary();
+mgr.getBonus();
+
+---------------------------------------------------------------------------------------
+
