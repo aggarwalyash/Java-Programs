@@ -1,0 +1,34 @@
+/***
+//Variable Size Argument
+We can atmost 1 variable size argument in method.
+It must be last argument(trailing part)
+It can save number of overloads.
+
+To declare:-
+datatype...argname
+
+***/
+
+-----------------------------------------------------------------------------
+
+void showListItems(int...param){          // internally variable size argument is treated as arrays.
+	for(int i: param){
+		System.out.println(i);
+	}
+}
+
+// saving no of overloads.
+showListItems();
+showListItems(100);  
+showListItems(1,2,3,4,5);
+int[] arr = {10,20,30,405};
+showListItems(arr);
+
+-----------------------------------------------------------------------------
+
+void foo(String s,int x,int...n){                             // minimum two argmumens need to be passed here.
+......
+}
+
+foo("abcd",100);
+foo("abcd",100,200,300)

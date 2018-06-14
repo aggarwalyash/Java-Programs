@@ -1,0 +1,25 @@
+/***
+Object casting:-
+1.)Upcasting
+2.)Downcasting
+
+***/
+
+----------------------------------------------------
+// Upcasting 
+
+class SomeClass{
+	Object someMethod(Object obj){       // upcasting because string is passed and converted into object type
+		return obj;
+}
+}
+
+// Downcasting
+
+SomeClass sc = new SomeClass();
+String str1 = "abcd";
+String str2 = (String)sc.someMethod(str1);    // downcasting because Object type is converted into String type
+
+-----------------------------------------------------------------
+
+/*** Final classes cannot be inherrited ***/
