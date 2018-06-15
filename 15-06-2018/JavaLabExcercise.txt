@@ -1,0 +1,18 @@
+1.Create class MyDate with fields day, month & year. Write a method initDate() to assign values to fields & display.
+2.Create class MyDate with fields day, month & year. Write accessor & mutators for the fields.
+3.Create class MyDate with fields day, month & year. Write default & parameterized constructors to initialize fields.
+4.Create class Employee with fields id, name, basicSalary, hra=5% of basicSalary, da=2.7% of basicSalary, medical=1.5% of basicSalary and a fixed TA=2000. Write method to calculate netSalary & grossSalary.
+5.Create class MathClass and write 3 overloaded versions of method add() to add values of different datatypes.
+6.Create class MathClass and write method add() with a variable size argument. Method should display addition of these array elements.
+7.Create class MyDate with fields day, month & year. Write default & parameterized constructors to initialize fields. Use concept of constructor chaining.
+8.Create class Employee with fields id, name, basicSalary, hra=5% of basicSalary, da=2.7% of basicSalary, medical=1.5% of basicSalary and a fixed TA=2000. Write method to calculate netSalary & grossSalary. Use array of Employee objects. Each object will have unique id generated through code. Also count no of employee objects.
+9.Create class MyDate with fields day, month & year. Override toString() method to show object contents.
+10.Create class MyDate with fields day, month & year. Demonstrate pass by value & pass by reference to swap the objects of MyDate.
+11.Create class Employee & Date. Implement aggregation by taking instance of Date as a member of Employee.
+12.Create class Employee. Implement composition by defining class Date as a member of Employee.
+13.Create class Employee with fields id, name & basicSalary. Create subclass Manager with fields petrolAllowance, foodAllowance & otherAllowance. Create subclass MarketingExecutive with fields kilometersTravelled, tourAllowance & a fixed telephoneAllowance=2000. Write methods to calculate netSalary & grossSalary in each class.
+14.Create abstract class Shape with abstract method area(). Create subclasses Rectangle & Circle to override area().
+15.Create interface Printable with method print(). Create subclasses Employee, Shape & Date to override print().
+16.Create class Date with fields day, month & year. Write method clone() to create clones of Date object. Also write method print() to display details of object.
+17.Create class Account with fields acctId, acctType, acctHolderName & an inner class Locker with field lockerId. Write appropriate constructors in both the classes. Also define method printAccountDetails() in Locker to print details of account & locker.
+18.Create class FileDemo to show details of file & also to write text to file & then read contents of a file.

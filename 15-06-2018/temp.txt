@@ -1,0 +1,39 @@
+// object comparison == , equals()
+
+
+clas Sample{
+....
+}
+
+Sample s1,s2;
+
+s1.equals(s2); //  true
+
+s1 = new Sample();
+s2 = s1;                                  // Shallow Cloning
+s1.equals(s2); //  true
+
+s1 = new Sample();
+s2 = new Sample();
+s1.equals(s2); //  false            --> heap is different
+
+-----------------------------------------------------------------
+/***
+Object Cloning   (Deep Cloning)
+
+Clonnable
+
+Object clone() throws CloneNotSupportedException  
+***/
+
+-----------------------------------------------------------
+marker(tag) interfaces
+
+if some class implements tag interface then it will not add any additional feature but simply provides a tag to indicate
+ex: clonnable,serializable
+
+It is empty as it does not provides any methods
+
+----------------------------------------------------------------------------
+
+
